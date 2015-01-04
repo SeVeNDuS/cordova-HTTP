@@ -22,6 +22,9 @@ var http = {
     post: function(url, params, headers, success, failure) {
         return exec(success, failure, "CordovaHttpPlugin", "post", [url, params, headers]);
     },
+    payload: function(url, params, headers, success, failure) {
+        return exec(success, failure, "CordovaHttpPlugin", "payload", [url, params, headers]);
+    },
     get: function(url, params, headers, success, failure) {
         return exec(success, failure, "CordovaHttpPlugin", "get", [url, params, headers]);
     },
